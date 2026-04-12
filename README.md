@@ -107,4 +107,3 @@ This project is open-source and available under the **MIT License**.
 ---
 
 ### ❤️ Made with creativity by Arijeet Mondal
-<img width="1919" height="1079" alt="Screenshot 2026-04-12 213759" src="https://github.com/user-attachments/assets/2e473c5c-f6e4-4c77-82c5-1a05f0630968" />
