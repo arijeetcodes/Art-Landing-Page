@@ -1,6 +1,5 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap");
 
 /* Resets */
 * {
@@ -10,10 +9,14 @@
 }
 
 body {
-  background-color: #ebeae9;
+  background-color: rgb(144, 195, 200);
   /* gives background color to the page */
   margin: 1rem;
   /* gives a margin of 1rem */
+}
+
+.wrapper-container {
+  background-color: #ebeae9;
 }
 
 html {
@@ -45,8 +48,13 @@ nav ul {
 li a {
   text-decoration: none;
   /* removes the underline of the anchor tag */
-  color: #000;
-  /* turns the font-color black */
+  background: rgb(144, 195, 200);
+  color: white;
+  padding: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* border: 2px solid black; */
+  border-radius: 12px;
 }
 nav .burger {
   margin-right: 5rem;
@@ -56,12 +64,19 @@ nav .burger {
 }
 nav .burger span {
   height: 4px;
-  border: 2px solid black;
   /* gives a border of 2px black colored */
-  margin: 4px;
+  margin: 5px;
   /* gives a margin of 4px around each element of the span tag */
-  background: #000;
+  padding: 5px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: rgb(144, 195, 200);
   /* turns the background color for each element to black */
+}
+.burger a {
+  text-decoration: none;
+  color: white;
 }
 /* Nav End */
 
@@ -77,6 +92,13 @@ header {
   /* increases the font-size of the main heading to 3rem */
   font-weight: 600;
   /* sets the font weight of the main-heading to 600: semi-bold */
+}
+header .main-headings {
+  background: rgb(144, 195, 200);
+  color: #ebeae9;
+  border-radius: 12px;
+  width: 33%;
+  padding: 10px;
 }
 .gradient-text {
   background-image: linear-gradient(
@@ -170,6 +192,7 @@ header {
   /* gives a padding of 2px top-bottom and 10px left-right within the span area */
   font-weight: bold;
   /* increases the font-weight of the span text to bold */
+  border-radius: 12px;
 }
 /* Header End */
 
@@ -193,6 +216,147 @@ main .img {
 }
 /* Main End */
 
-/* Section Start */
+/* Section-Three Start */
+.section-three {
+  margin-left: 5rem;
+  /* gives a margin of 5rem to the left of the section */
+}
+.section-three .main-headings {
+  background: rgb(144, 195, 200);
+  color: #ebeae9;
+  width: 30%;
+  padding: 5px;
+  height: 145px;
+  border-radius: 12px;
+}
+.section-three .primary-headings {
+  margin-bottom: 10rem;
+  /* gives a margin of 10rem to the bottom of the para */
+  line-height: 35px;
+}
+.list {
+  display: flex;
+  /* aligns all the list images and heading in one axis */
+  flex-wrap: wrap;
+  /* wraps all the list images and heading such that they fit in the given area and no dimensionality is compromised */
+  justify-content: center;
+  /* aligns all the list images and heading to the center of horizontal-axis */
+  align-items: center;
+  /* aligns all the list images and headings to the center of vertical axis */
+}
+.section-three .item h1 {
+  font-size: 2rem;
+  /* fixes the font-size to 2rem */
+}
+.section-three .item h1 a {
+  text-decoration: none;
+  background: rgb(144, 195, 200);
+  color: #ebeae9;
+  padding: 5px;
+  border-radius: 12px;
+}
+.section-three img {
+  width: 400px;
+  height: 500px;
+  /* fixes the image dimension ratio */
+  margin: 50px;
+  /* gives a margin of 50px around each image */
+}
+/* Section-Three End */
 
-/* Section End */
+/* Footer Start */
+footer {
+  margin-top: 10rem;
+  /* gives a margin of 10rem to the top */
+  height: 50vh;
+  /* gives a height of 100vh to the footer section */
+  display: flex;
+  /* aligns the two major div elements in one axis */
+  flex-wrap: wrap;
+  /* wrap the elements such that no compromise on dimensionality and no space between elements */
+  justify-content: space-around;
+  /* aligns the two major div in horizaontal axis such that there is space around them */
+  align-items: center;
+  /* aligns the two major div in the center of the vertical axis */
+  color: white;
+  /* turns font color to white */
+  background: rgb(144, 195, 200);
+}
+footer .logo-container h1 {
+  font-size: 2.5rem;
+  /* increases the font size of the logo text to 4rem */
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+  /* gives a margin of 20px to the bottom of the logo text */
+}
+footer .logo-container h1 a {
+  text-decoration: none;
+  color: rgb(144, 195, 200);
+  background: white;
+  padding: 5px;
+  border-radius: 12px;
+}
+footer .logo-container p {
+  max-width: 400px;
+  /* decreases the width area of p to 400px */
+  font-family: sans-serif;
+  line-height: 25px;
+  /* increases the line height of p to 25px */
+}
+footer .about-company {
+  display: flex;
+  /* aligns the three divs under about-company class in one axis */
+  flex-wrap: wrap;
+  /* wrap the elements such that no compromise on dimensionality and no space between elements */
+  justify-content: center;
+  /* aligns the three divs in the center of the x-axis */
+  align-items: center;
+  /* aligns the three divs in the center of the y-axis */
+}
+footer .about-company .container {
+  margin-right: 100px;
+  /* gives a margin of 40px to the right of the about-company class */
+  margin-top: 20px;
+  /* gives a margin of 20px to the top of the about-company class */
+}
+.about-company .container h1 {
+  color: rgb(144, 195, 200);
+  background: white;
+  padding: 5px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  /* gives a margin of 50px to the bottom of about-company headings */
+}
+.about-company .container p {
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+.about-company .container a {
+  text-decoration: none;
+  color: rgb(144, 195, 200);
+  background: white;
+  padding: 5px;
+  border-radius: 12px;
+}
+/* Footer End */
+
+/* Responsiveness */
+@media screen and (max-width: 740px) {
+  header .main-headings {
+    width: 100%;
+  }
+  header .primary-headings {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .section-three .main-headings {
+    width: 100%;
+  }
+  .section-three .primary-headings {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .section-three img {
+    margin: 0;
+  }
+}
