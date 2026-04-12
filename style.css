@@ -24,6 +24,27 @@ html {
   /* gives open sans font family to the entire web page */
 }
 
+/* Custom Scroll Bar Start */
+::-webkit-scrollbar {
+  width: 10px;
+  /* sets the width of the scrollbar path */
+}
+::-webkit-scrollbar-track {
+  background: rgb(144, 195, 200);
+  /* sets the color of the custom scrollbar path */
+}
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+  /* sets the color of the custom scrollbar */
+  border-radius: 12px;
+  /* smoothens the sharp edges of the custom scrollbar by 12px */
+  transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f1f1f1;
+}
+/* Custom Scroll Bar End */
+
 /* Nav Start */
 nav {
   display: flex;
