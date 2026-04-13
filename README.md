@@ -6,7 +6,7 @@ A visually engaging and responsive **Art Landing Page** built using **HTML, CSS,
 
 ## 🚀 Live Preview
 
-*(Add your deployed link here if available)*
+*https://youtu.be/WSxjDT7PbY8*
 
 <img width="1919" height="1079" alt="Screenshot 2026-04-12 213759" src="https://github.com/user-attachments/assets/e1e63102-36ea-4bfc-baf6-2fedc71170c8" />
 <img width="1919" height="1079" alt="Screenshot 2026-04-12 213835" src="https://github.com/user-attachments/assets/04da0c30-12b5-471c-bc6c-ca11cc14dc3d" />
