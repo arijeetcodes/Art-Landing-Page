@@ -1,0 +1,435 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(144, 195, 200);
+  /* gives background color to the page */
+  margin: 1rem;
+  /* gives a margin of 1rem */
+}
+
+.wrapper-container {
+  background-color: white;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  /* gives open sans font family to the entire web page */
+}
+
+/* Custom Scroll Bar Start */
+::-webkit-scrollbar {
+  width: 10px;
+  /* sets the width of the scrollbar path */
+}
+::-webkit-scrollbar-track {
+  background: rgb(144, 195, 200);
+  /* sets the color of the custom scrollbar path */
+}
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+  /* sets the color of the custom scrollbar */
+  border-radius: 12px;
+  /* smoothens the sharp edges of the custom scrollbar by 12px */
+  transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f1f1f1;
+}
+/* Custom Scroll Bar End */
+
+/* Nav Start */
+nav {
+  display: flex;
+  /* aligns the elements in one axis */
+  justify-content: space-between;
+  /* sets the elements such that there is space between each elements */
+  align-items: center;
+  /* aligns the elements to the center of the y-axis wrt the provided area */
+  color: #fff;
+  /* turns the font color white */
+  padding: 20px;
+  /* gives a padding of 20px around the elements */
+  margin-bottom: 5rem;
+  /* gives a margin of 5rem from the bottom of the elements */
+}
+nav ul {
+  margin-left: 5rem;
+  /* gives a margin of 5rem to the left of the elements of the navbar */
+  list-style: none;
+  /* removes the bullet point of the unordered list */
+}
+li a {
+  text-decoration: none;
+  /* removes the underline of the anchor tag */
+  background: rgb(144, 195, 200);
+  color: white;
+  padding: 5px;
+  font-size: 1.75rem;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 4px solid transparent;
+}
+li a:hover {
+  color: rgb(144, 195, 200);
+  background: white;
+  border: 4px solid rgb(144, 195, 200);
+  transition: 0.2s ease-out;
+}
+nav .burger {
+  display: flex;
+}
+.burger a {
+  text-decoration: none;
+  color: white;
+  background: rgb(144, 195, 200);
+  /* turns the background color for each element to black */
+  padding: 5px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 10px;
+  border: 4px solid transparent;
+}
+.burger a:hover {
+  color: rgb(144, 195, 200);
+  background: white;
+  border: 4px solid rgb(144, 195, 200);
+  transition: 0.2s ease-out;
+}
+/* Nav End */
+
+/* Header Start */
+header {
+  margin: 6rem;
+  /* gives a margin of 6rem to the overall header area */
+}
+.main-headings {
+  width: 50%;
+  /* reduces the width area of the main headig to 50% */
+  font-size: 3rem;
+  /* increases the font-size of the main heading to 3rem */
+  font-weight: 600;
+  /* sets the font weight of the main-heading to 600: semi-bold */
+}
+header .main-headings {
+  background: rgb(144, 195, 200);
+  color: white;
+  border-radius: 12px;
+  width: 33%;
+  padding: 10px;
+}
+.gradient-text {
+  background-image: linear-gradient(
+    to right,
+    #ff0000,
+    #ff1900,
+    #ff3300,
+    #ff4d00,
+    #ff6600,
+    #ff8000,
+    #ff9900,
+    #ffb300,
+    #ffcc00,
+    #ffe600,
+    #ffff00,
+    #e6ff00,
+    #ccff00,
+    #b3ff00,
+    #99ff00,
+    #80ff00,
+    #66ff00,
+    #4dff00,
+    #33ff00,
+    #19ff00,
+    #00ff00,
+    #00ff19,
+    #00ff33,
+    #00ff4d,
+    #00ff66,
+    #00ff80,
+    #00ff99,
+    #00ffb3,
+    #00ffcc,
+    #00ffe6,
+    #00ffff,
+    #00e6ff,
+    #00ccff,
+    #00b3ff,
+    #0099ff,
+    #0080ff,
+    #0066ff,
+    #004dff,
+    #0033ff,
+    #0019ff,
+    #0000ff,
+    #1900ff,
+    #3300ff,
+    #4d00ff,
+    #6600ff,
+    #8000ff,
+    #9900ff,
+    #b300ff,
+    #cc00ff,
+    #e600ff,
+    #ff00ff,
+    #ff00e6,
+    #ff00cc,
+    #ff00b3,
+    #ff0099,
+    #ff0080,
+    #ff0066,
+    #ff004d,
+    #ff0033,
+    #ff0019
+  );
+  /* Defining the gradient using background-image */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Clipping the gradient background to the text */
+  color: transparent;
+  /* Making the original text color transparent so that the gradient is visible */
+  -webkit-text-fill-color: transparent;
+  /* Standard fallback for older browsers */
+}
+.primary-headings {
+  width: 50%;
+  /* reduces the wdith area of the primary heading to 50% */
+  margin-top: 3rem;
+  /* gives a margin of 3rem to the top of the primary heading area */
+  font-size: 1.5rem;
+  /* increases the font size of the primary heading to 1.5rem */
+  line-height: 30px;
+  /* reduces the line height of the primary headings to 30px */
+}
+.bg-gray {
+  background: rgb(97, 97, 97);
+  /* turns the span areaa color to gray */
+  color: white;
+  /* turns the span font color to white */
+  padding: 2px 10px;
+  /* gives a padding of 2px top-bottom and 10px left-right within the span area */
+  font-weight: bold;
+  /* increases the font-weight of the span text to bold */
+  border-radius: 12px;
+}
+/* Header End */
+
+/* Main Start */
+main {
+  margin: 0 4rem;
+  /* gives a margin of 0rem top-bottom and 4rem left-right for each image area */
+  display: flex;
+  /* aligns all the image areas in one axis */
+  flex-wrap: wrap;
+  /* wraps all the image areas such that no space remains without affecting the image dimensions */
+  justify-content: center;
+  /* aligns the image areas in the center of the x axis */
+  margin: 40px;
+}
+main .img {
+  width: 40%;
+  /* reduces the images to 40% */
+  margin: 10px;
+  /* gives a margin of 10px around each images */
+}
+/* Main End */
+
+/* Section-Three Start */
+.section-three {
+  margin-left: 5rem;
+  /* gives a margin of 5rem to the left of the section */
+}
+.section-three .main-headings {
+  background: rgb(144, 195, 200);
+  color: white;
+  width: 30%;
+  padding: 5px;
+  height: 145px;
+  border-radius: 12px;
+}
+.section-three .primary-headings {
+  margin-bottom: 10rem;
+  /* gives a margin of 10rem to the bottom of the para */
+  line-height: 35px;
+}
+.list {
+  display: flex;
+  /* aligns all the list images and heading in one axis */
+  flex-wrap: wrap;
+  /* wraps all the list images and heading such that they fit in the given area and no dimensionality is compromised */
+  justify-content: center;
+  /* aligns all the list images and heading to the center of horizontal-axis */
+  align-items: center;
+  /* aligns all the list images and headings to the center of vertical axis */
+}
+.section-three .item h1 {
+  font-size: 2rem;
+  /* fixes the font-size to 2rem */
+}
+.section-three .item h1 a {
+  text-decoration: none;
+  background: rgb(144, 195, 200);
+  color: white;
+  padding: 5px;
+  border-radius: 12px;
+  border: 4px solid transparent;
+}
+.section-three .item h1 a:hover {
+  color: rgb(144, 195, 200);
+  background: white;
+  border: 4px solid rgb(144, 195, 200);
+  transition: 0.2s ease-out;
+}
+.section-three img {
+  width: 400px;
+  height: 500px;
+  /* fixes the image dimension ratio */
+  margin: 50px;
+  /* gives a margin of 50px around each image */
+}
+/* Section-Three End */
+
+/* Footer Start */
+.footer {
+  margin-top: 10rem;
+  /* gives a margin of 10rem to the top */
+  height: 50vh;
+  /* gives a height of 100vh to the footer section */
+  display: flex;
+  /* aligns the two major div elements in one axis */
+  flex-wrap: wrap;
+  /* wrap the elements such that no compromise on dimensionality and no space between elements */
+  justify-content: space-around;
+  /* aligns the two major div in horizaontal axis such that there is space around them */
+  align-items: center;
+  /* aligns the two major div in the center of the vertical axis */
+  color: white;
+  /* turns font color to white */
+  background: rgb(144, 195, 200);
+}
+.footer .logo-container h1 {
+  font-size: 2.5rem;
+  /* increases the font size of the logo text to 4rem */
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+  /* gives a margin of 20px to the bottom of the logo text */
+}
+.footer .logo-container h1 a {
+  text-decoration: none;
+  color: rgb(144, 195, 200);
+  background: white;
+  padding: 5px;
+  border-radius: 12px;
+  border: 4px solid transparent;
+}
+.footer .logo-container h1 a:hover {
+  color: white;
+  background: rgb(144, 195, 200);
+  border: 4px solid white;
+  transition: 0.2s ease-out;
+}
+.footer .logo-container p {
+  max-width: 400px;
+  /* decreases the width area of p to 400px */
+  font-family: sans-serif;
+  line-height: 25px;
+  /* increases the line height of p to 25px */
+}
+.footer .about-company {
+  display: flex;
+  /* aligns the three divs under about-company class in one axis */
+  flex-wrap: wrap;
+  /* wrap the elements such that no compromise on dimensionality and no space between elements */
+  justify-content: center;
+  /* aligns the three divs in the center of the x-axis */
+  align-items: center;
+  /* aligns the three divs in the center of the y-axis */
+}
+.footer .about-company .container {
+  margin-right: 100px;
+  /* gives a margin of 40px to the right of the about-company class */
+  margin-top: 20px;
+  /* gives a margin of 20px to the top of the about-company class */
+}
+.about-company .container h1 {
+  color: rgb(144, 195, 200);
+  background: white;
+  padding: 5px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  /* gives a margin of 50px to the bottom of about-company headings */
+}
+.about-company .container p {
+  font-family: sans-serif;
+  margin-bottom: 25px;
+}
+.about-company .container a {
+  text-decoration: none;
+  color: rgb(144, 195, 200);
+  background: white;
+  padding: 5px;
+  border-radius: 12px;
+  border: 4px solid transparent;
+}
+.about-company .container a:hover {
+  color: white;
+  background: rgb(144, 195, 200);
+  border: 4px solid white;
+  transition: 0.2s ease-out;
+}
+footer .social-links {
+  background: rgb(144, 195, 200);
+  position: absolute;
+  left: 72%;
+  height: 75px;
+}
+footer .social-links i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 0.2rem solid white;
+  border-radius: 50%;
+  color: white;
+  margin: 5px 15px;
+  font-size: 1.5rem;
+  transition: 0.2s linear;
+}
+footer .social-links i:hover {
+  scale: 1.3;
+  color: rgb(144, 195, 200);
+  background-color: white;
+  filter: drop-shadow(0 0 10px white);
+}
+/* Footer End */
+
+/* Responsiveness */
+@media screen and (max-width: 740px) {
+  header .main-headings {
+    width: 100%;
+  }
+  header .primary-headings {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .section-three .main-headings {
+    width: 100%;
+  }
+  .section-three .primary-headings {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .section-three img {
+    margin: 0;
+  }
+}
